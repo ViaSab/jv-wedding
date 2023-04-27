@@ -1,3 +1,15 @@
 body {
-  background-color: $light-color;
+  background-color: $primary-lightest-color;
+  margin: 0;
+  font-family: $secondary-font;
+}
+
+h1 {
+  font-family: $primary-font-extra-bold;
+  font-size: 3em;
+  color: $primary-color;
+}
+
+h2 {
+  font-family: $primary-font-bold;
 }

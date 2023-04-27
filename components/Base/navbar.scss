@@ -1,0 +1,33 @@
+nav {
+  --el-menu-bg-color: none;
+  --el-menu-text-color: #31473c;
+  --el-menu-active-color: #31473c;
+  --el-menu-hover-text-color: #31473c;
+  --el-menu-hover-bg-color: #f2f7f5; //Yellow = e8b15f - rose = f5d7db - white = f2f7f5
+  --el-menu-base-level-padding: 0;
+  > ul {
+    justify-content: center;
+    text-transform: uppercase;
+    > li {
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: $primary-color;
+      }
+    }
+  }
+
+  //rewrite element-plus styling
+  .el-menu--horizontal {
+    align-items: center;
+  }
+  .el-menu--horizontal > .el-menu-item a {
+    padding: 0 20px;
+  }
+  .el-menu--horizontal > .el-menu-item:hover {
+    border-bottom: 2px solid $primary-light-color;
+  }
+  .el-menu--horizontal > .el-menu-item.is-active:hover {
+    border-bottom: 2px solid $primary-color;
+  }
+}

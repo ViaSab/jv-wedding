@@ -1,9 +1,10 @@
 <template>
   <ElContainer direction="vertical">
-    <AppHeader />
+    <BaseHeader />
+    <BaseNavBar />
     <ElMain>
       <NuxtPage />
     </ElMain>
-    <AppFooter />
+    <BaseFooter />
   </ElContainer>
 </template>

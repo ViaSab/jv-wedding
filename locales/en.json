@@ -1,5 +1,17 @@
 {
-  "home": {
-    "welcome": "Welcome on our site!"
+  "common": {
+    "other-language": "FR"
+  },
+  "header": {
+    "date": "April 27th, 2024",
+    "location": "Strasbourg, FR"
+  },
+  "navbar": {
+    "index": "Home",
+    "photos": "Photos",
+    "our-story": "Our Story"
+  },
+  "footer": {
+    "text": "Built with passion by Jillian and Vianney"
   }
 }

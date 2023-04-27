@@ -1,7 +1,18 @@
 /* Colors */
-$lighter-color: #e0e1dd;
-$light-color: #778da9;
-$dark-color: #415a77;
-$darker-color: #1b263b;
-$darkest-color: #0d1b2a;
-$white-color: #fff;
+$primary-color: #31473c;
+$primary-light-color: #89a189;
+$primary-lightest-color: #f2f7f5;
+$secondary-color: #e8b15f;
+$tertiary-color: #f5d7db;
+$dark-color: #555555;
+
+/* Fonts */
+$primary-font: "montserrat-a", Verdana, sans-serif;
+$primary-font-bold: "montserrat-a-bold", Verdana, sans-serif;
+$primary-font-extra-bold: "montserrat-a-extra-bold", Verdana, sans-serif;
+$secondary-font: Verdana, sans-Serif;
+
+/* Spacing */
+$space-15: 15px;
+$space-30: 30px;
+$space-60: 60px;

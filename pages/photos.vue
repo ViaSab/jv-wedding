@@ -1,8 +1,11 @@
-<script setup></script>
+<script setup>
+const { locale } = useI18n();
+const path = computed(() => {
+  return locale.value === "en" ? "photos" : "fr/photos";
+});
+</script>
 <template>
   <div>
-    <h2>
-      {{ $t("photos.title") }}
-    </h2>
+    <ContentDoc :path="path" />
   </div>
 </template>

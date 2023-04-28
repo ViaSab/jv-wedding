@@ -1,6 +1,14 @@
-<script setup></script>
+<script setup>
+const { locale } = useI18n();
+const { data } = await useAsyncData("our-story", () => {
+  const path = locale.value === "en" ? "our-story" : "fr/our-story";
+  return queryContent(path).find();
+});
+</script>
 <template>
   <div>
-    <h2>{{ $t("our-story.title") }}</h2>
+    <template v-for="(art, index) in data" :key="index">
+      <ContentRenderer :value="art" />
+    </template>
   </div>
 </template>

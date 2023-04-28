@@ -7,7 +7,8 @@ const { data: home } = await useAsyncData("home", () =>
 
 <template>
   <div>
-    <!-- <ContentDoc :path="`/${$i18n.locale}/home/welcome`" /> -->
+    <ContentDoc :path="`/${locale}/home/welcome`" />
+    -----
     <template v-for="(art, index) in home" :key="index">
       <ContentRenderer :value="art" />
     </template>

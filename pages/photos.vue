@@ -1,6 +1,8 @@
 <script setup></script>
 <template>
   <div>
-    <h2>Photos</h2>
+    <h2>
+      {{ $t("photos.title") }}
+    </h2>
   </div>
 </template>

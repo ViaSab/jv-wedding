@@ -1,5 +1,5 @@
 <script setup>
-const { activeMenuItem, sortedNavBarMenu, menuItems } = useNavBar();
+const { activeMenuItem, menuItems } = useNavBar();
 </script>
 
 <template>

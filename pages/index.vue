@@ -1,16 +1,11 @@
-<script setup>
-const { locale } = useI18n();
-const { data: home } = await useAsyncData("home", () =>
-  queryContent(`/${locale.value}/home`).find()
-);
-</script>
+<script setup></script>
 
 <template>
   <div>
-    <ContentDoc :path="`/${locale}/home/welcome`" />
-    -----
-    <template v-for="(art, index) in home" :key="index">
-      <ContentRenderer :value="art" />
-    </template>
+    <ContentDoc />
+  </div>
+  <ElDivider />
+  <div>
+    <ContentDoc :path="localePath('index')" />
   </div>
 </template>

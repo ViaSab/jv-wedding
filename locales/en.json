@@ -13,5 +13,11 @@
   },
   "footer": {
     "text": "Built with passion by Jillian and Vianney"
+  },
+  "our-story": {
+    "title": "Our story"
+  },
+  "photos": {
+    "title": "Our Photos"
   }
 }

@@ -1,11 +1,11 @@
-<script setup></script>
+<script setup>
+const localePath = useLocalePath();
+</script>
 
 <template>
   <div>
     <ContentDoc />
-  </div>
-  <ElDivider />
-  <div>
+    <ElDivider />
     <ContentDoc :path="localePath('index')" />
   </div>
 </template>

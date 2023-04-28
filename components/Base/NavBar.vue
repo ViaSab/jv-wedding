@@ -1,4 +1,5 @@
 <script setup>
+const localePath = useLocalePath();
 const { activeMenuItem, menuItems } = useNavBar();
 </script>
 

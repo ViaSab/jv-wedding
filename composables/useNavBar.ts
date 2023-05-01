@@ -6,7 +6,7 @@ interface UseNavBar {
 const useNavBar = (): UseNavBar => {
   let activeMenuItem = ref<String>("0");
   const route = useRoute();
-  const menuItems = ["index", "photos", "our-story"];
+  const menuItems = MENU;
 
   const _getActiveMenuItem = (): string => {
     const name = route.name?.toString().split("___")[0];

@@ -1,14 +1,22 @@
 <script setup>
-const { locale } = useI18n();
-const { data } = await useAsyncData("our-story", () => {
-  const path = locale.value === "en" ? "our-story" : "fr/our-story";
-  return queryContent(path).find();
-});
+const photos = OUR_STORY_PHOTOS;
 </script>
 <template>
-  <div>
-    <template v-for="(art, index) in data" :key="index">
-      <ContentRenderer :value="art" />
-    </template>
-  </div>
+  <ElRow justify="center">
+    <ElCol :xs="24" :md="18" :xl="12">
+      <ContentDoc />
+    </ElCol>
+  </ElRow>
+  <ElDivider border-style="dashed" />
+  <ElRow :gutter="15">
+    <ElCol
+      :xl="6"
+      :lg="8"
+      :sm="12"
+      v-for="(photo, index) in photos"
+      :key="index"
+    >
+      <CardPhotos category="our-story" :photo="photo" />
+    </ElCol>
+  </ElRow>
 </template>

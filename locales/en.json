@@ -15,7 +15,27 @@
     "text": "Built with passion by Jillian and Vianney"
   },
   "our-story": {
-    "title": "Our story"
+    "title": "Our story",
+    "alberta": {
+      "title": "Alberta",
+      "description": "Our first trip in Canada",
+      "date": "2019"
+    },
+    "tofino": {
+      "title": "Tofino",
+      "description": "Our first trip in Canada",
+      "date": "2019"
+    },
+    "arizona": {
+      "title": "Arizona",
+      "description": "Our first trip in Canada",
+      "date": "2019"
+    },
+    "lake-superior": {
+      "title": "Lake Superior",
+      "description": "Our first trip in Canada",
+      "date": "2019"
+    }
   },
   "photos": {
     "title": "Our Photos"

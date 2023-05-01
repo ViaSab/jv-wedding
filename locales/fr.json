@@ -15,7 +15,12 @@
     "text": "Réalisés avec passion par Jillian et Vianney"
   },
   "our-story": {
-    "title": "Notre histoire"
+    "title": "Notre histoire",
+    "alberta": {
+      "title": "Alberta",
+      "description": "Nos premières vacances au Canada",
+      "date": "2019"
+    }
   },
   "photos": {
     "title": "Nos photos"

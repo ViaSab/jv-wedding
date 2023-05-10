@@ -1,6 +1,8 @@
 <template>
   <ElHeader height="auto">
-    <BaseNavBar />
+    <ElAffix>
+      <BaseNavBar />
+    </ElAffix>
   </ElHeader>
 </template>
 

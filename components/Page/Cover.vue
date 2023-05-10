@@ -1,7 +1,7 @@
 <template>
   <div class="cover">
     <h1><slot /></h1>
-    <img src="img/our-story/alberta.jpg" />
+    <ElImage :src="`/img/our-story/alberta.jpg`" fit="cover" loading="lazy" />
   </div>
 </template>
 

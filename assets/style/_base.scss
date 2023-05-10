@@ -1,11 +1,11 @@
 body {
   background-color: $primary-lightest-color;
   margin: 0;
-  font-family: $secondary-font;
+  font-family: $content-font;
 }
 
 h1 {
-  font-family: $primary-font-extra-bold;
+  font-family: $title-font;
   font-size: 3em;
   color: $primary-color;
 }
@@ -13,5 +13,5 @@ h1 {
 h2,
 h3,
 h4 {
-  font-family: $primary-font-bold;
+  font-family: $title-font;
 }

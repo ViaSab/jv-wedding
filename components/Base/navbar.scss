@@ -1,11 +1,17 @@
 nav {
-  --el-menu-bg-color: $primary-lightest-color;
+  --el-menu-bg-color: #f2f7f5;
   --el-menu-text-color: #31473c;
   --el-menu-active-color: #31473c;
   --el-menu-hover-text-color: #31473c;
-  --el-menu-hover-bg-color: #f2f7f5; //Yellow = e8b15f - rose = f5d7db - white = f2f7f5
+  --el-menu-hover-bg-color: #f2f7f5;
   --el-menu-base-level-padding: 0;
+
+  .language-item {
+    border-left: 1px solid $secondary-color;
+  }
+
   > ul {
+    padding: 0 20px;
     justify-content: center;
     text-transform: uppercase;
     > li {
@@ -20,14 +26,32 @@ nav {
   //rewrite element-plus styling
   .el-menu--horizontal {
     align-items: center;
+
+    > .el-menu-item a {
+      padding: 0 20px;
+    }
+
+    > .el-menu-item:hover {
+      border-bottom: 2px solid $primary-light-color;
+    }
   }
-  .el-menu--horizontal > .el-menu-item a {
-    padding: 0 20px;
-  }
-  .el-menu--horizontal > .el-menu-item:hover {
-    border-bottom: 2px solid $primary-light-color;
-  }
+
+  .el-menu--horizontal,
   .el-menu--horizontal > .el-menu-item.is-active:hover {
     border-bottom: 2px solid $primary-color;
+  }
+}
+
+.el-menu--horizontal.el-menu--popup-container > ul {
+  text-transform: uppercase;
+  > li {
+    a {
+      text-decoration: none;
+      color: $primary-color;
+    }
+  }
+
+  .language-item {
+    border-top: 1px solid $secondary-color;
   }
 }

@@ -1,10 +1,10 @@
 interface UseRouteName {
-  routeName: Ref<String>;
+  routeName: Ref<string>;
 }
 
 const useRouteName = (): UseRouteName => {
   const route = useRoute();
-  const routeName = ref<String>(
+  const routeName = ref<string>(
     route.name?.toString().split("___")[0] || "index"
   );
 

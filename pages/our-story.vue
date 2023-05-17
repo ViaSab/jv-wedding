@@ -8,7 +8,7 @@ const photos = OUR_STORY_PHOTOS;
     </ElCol>
   </ElRow>
   <ElDivider border-style="dashed" />
-  <ElRow :gutter="15">
+  <ElRow :gutter="30">
     <ElCol
       :xl="6"
       :lg="8"

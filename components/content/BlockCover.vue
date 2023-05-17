@@ -1,5 +1,15 @@
+<script setup>
+defineProps({
+  path: String,
+  alt: String,
+});
+</script>
+
 <template>
   <div class="cover">
-    <h1><slot /></h1>
+    <div class="cover__content"><ContentSlot :use="$slots.default" /></div>
+    <AppPicture :path="path" :alt="alt" />
   </div>
 </template>
+
+<style src="./blockCover.scss" lang="scss" />

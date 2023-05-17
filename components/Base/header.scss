@@ -1,5 +1,6 @@
-header {
-  margin-bottom: $space-30;
+header.el-header {
+  --el-header-padding: 0;
+
   .subtitle {
     font-size: 1.4em;
     color: $dark-color;

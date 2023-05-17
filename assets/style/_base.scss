@@ -6,12 +6,17 @@ body {
 
 h1 {
   font-family: $title-font;
-  font-size: 3em;
-  color: $primary-color;
+  font-size: 5em;
+  color: white;
 }
 
 h2,
 h3,
 h4 {
   font-family: $title-font;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

@@ -15,11 +15,6 @@ const { activeMenuItem, menuItems } = useNavBar();
           {{ $t(`navbar.${item}`) }}
         </NuxtLink>
       </ElMenuItem>
-      <ElDivider
-        direction="vertical"
-        border-style="solid"
-        style="height: 40px"
-      />
       <ElMenuItem class="language-item"><LanguageToggle /></ElMenuItem>
     </ElMenu>
   </nav>

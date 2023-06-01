@@ -10,6 +10,10 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 h2,
 h3,
 h4 {
@@ -19,4 +23,14 @@ h4 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+img,
+source {
+  display: block;
+}
+
+main {
+  max-width: 1920px;
+  align-self: center;
 }

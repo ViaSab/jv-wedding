@@ -34,11 +34,10 @@ nav {
     > .el-menu-item:hover {
       border-bottom: 2px solid $primary-light-color;
     }
-  }
 
-  .el-menu--horizontal,
-  .el-menu--horizontal > .el-menu-item.is-active:hover {
-    border-bottom: 2px solid $primary-color;
+    .el-menu-item.is-active:hover {
+      border-bottom: 2px solid $primary-color;
+    }
   }
 }
 

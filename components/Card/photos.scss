@@ -1,8 +1,12 @@
 .photo-card {
-  margin-bottom: $space-15;
+  margin-bottom: $space-30;
 
   h3 {
     margin-top: 0;
+  }
+
+  p {
+    height: 40px;
   }
 
   .details {

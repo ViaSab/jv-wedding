@@ -16,10 +16,45 @@
   },
   "our-story": {
     "title": "Notre histoire",
+    "blue-mountain": {
+      "title": "Blue Mountain",
+      "description": "One of our first dates was at Blue Mountain, where we spent an afternoon snowboarding.",
+      "date": "2018"
+    },
+    "france": {
+      "title": "France",
+      "description": "Our first trip was in France and Portugal. Jill met Vianney's family for the first time.",
+      "date": "2019"
+    },
     "alberta": {
       "title": "Alberta",
-      "description": "Nos premières vacances au Canada",
+      "description": "In summer 2019 we travelled to the Rockies where we spent a week camping.",
       "date": "2019"
+    },
+    "tofino": {
+      "title": "Tofino",
+      "description": "Surf trip on the Vancouver Island.",
+      "date": "2019"
+    },
+    "arizona": {
+      "title": "Arizona",
+      "description": "Just before covid hit, we were able to spend some time in Arizona.",
+      "date": "2020"
+    },
+    "lake-superior": {
+      "title": "Lake Superior",
+      "description": "A long road trip around Lake Superior",
+      "date": "2020"
+    },
+    "cambridge": {
+      "title": "Moving together",
+      "description": "We moved togther in a Condo in Cambridge",
+      "date": "2020"
+    },
+    "engagement": {
+      "title": "Engagement",
+      "description": "On November 26th Vianney proposed and Jill said \"Oui\".",
+      "date": "2022"
     }
   },
   "photos": {

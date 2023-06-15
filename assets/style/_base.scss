@@ -6,8 +6,9 @@ body {
 
 h1 {
   font-family: $title-font;
-  font-size: 5em;
-  color: white;
+  color: $darker-color;
+  font-size: 3em;
+  text-align: center;
 }
 
 h2 {

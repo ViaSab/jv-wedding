@@ -13,3 +13,19 @@
 .rounded {
   border-radius: 50%;
 }
+
+.button {
+  color: $primary-lightest-color;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: $primary-color;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: $space-15;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

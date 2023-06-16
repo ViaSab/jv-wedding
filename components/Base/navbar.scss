@@ -6,8 +6,11 @@ nav {
   --el-menu-hover-bg-color: #f2f7f5;
   --el-menu-base-level-padding: 0;
 
-  .language-item {
+  .language-item::before {
+    display: block;
+    content: "";
     border-left: 1px solid $secondary-color;
+    height: 30px;
   }
 
   > ul {

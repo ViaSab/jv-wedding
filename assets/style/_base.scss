@@ -2,11 +2,11 @@ body {
   background-color: $primary-lightest-color;
   margin: 0;
   font-family: $content-font;
+  color: $darker-color;
 }
 
 h1 {
   font-family: $title-font;
-  color: $darker-color;
   font-size: 3em;
   text-align: center;
 }

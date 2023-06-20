@@ -10,7 +10,8 @@
   "navbar": {
     "index": "Home",
     "photos": "Photos",
-    "our-story": "Our Story"
+    "our-story": "Our Story",
+    "schedule": "Schedule"
   },
   "footer": {
     "text": "Built with passion by Jillian and Vianney"

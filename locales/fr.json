@@ -10,7 +10,8 @@
   "navbar": {
     "index": "Accueil",
     "photos": "Photos",
-    "our-story": "Notre histoire"
+    "our-story": "Notre histoire",
+    "schedule": "Agenda"
   },
   "footer": {
     "text": "Réalisés avec passion par Jillian et Vianney"

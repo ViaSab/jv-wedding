@@ -26,12 +26,17 @@ img {
   height: auto;
 }
 
-img,
-source {
+picture > img,
+picture > source {
   display: block;
 }
 
 main {
   max-width: 1920px;
   align-self: center;
+}
+
+hr {
+  border-top: 1px solid $secondary-color;
+  width: 50%;
 }

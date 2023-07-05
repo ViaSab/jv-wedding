@@ -18,24 +18,24 @@
   },
   "our-story": {
     "title": "Notre histoire",
-    "blue-mountain": {
-      "title": "Blue Mountain",
-      "description": "One of our first dates was at Blue Mountain, where we spent an afternoon snowboarding.",
+    "first-date": {
+      "title": "Premier rendez-vous",
+      "description": "Un de nos premiers rendez-vous était à Blue Mountain. Une station de ski au nord de Toronto où nous avons passé notre après-midi à faire du snowboard.",
       "date": "2018"
     },
     "france": {
-      "title": "France",
-      "description": "Our first trip was in France and Portugal. Jill met Vianney's family for the first time.",
+      "title": "Premier voyage",
+      "description": "Notre premier voyage était en Europe au début de l'année 2019. Nous sommes allés en France et au Portugal. Jill y a rencontré la famille de Vianney pour la première fois.",
       "date": "2019"
     },
     "alberta": {
-      "title": "Alberta",
-      "description": "In summer 2019 we travelled to the Rockies where we spent a week camping.",
+      "title": "Vacances d'été",
+      "description": "Durant l'été 2019 nous sommes partis à la découverte des rocheuses canadiennes où nous avons campés pendant une semaine.",
       "date": "2019"
     },
     "tofino": {
-      "title": "Tofino",
-      "description": "Surf trip on the Vancouver Island.",
+      "title": "Surf trip dans le pacifique",
+      "description": "À l'automne de la même année, nous avons loué un van et des planches de surf pour profiter des vagues du pacifique sur l'île de vancouver à l'extrême ouest du Canada.",
       "date": "2019"
     },
     "arizona": {

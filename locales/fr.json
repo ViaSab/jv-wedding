@@ -20,42 +20,62 @@
     "title": "Notre histoire",
     "first-date": {
       "title": "Premier rendez-vous",
-      "description": "Un de nos premiers rendez-vous était à Blue Mountain. Une station de ski au nord de Toronto où nous avons passé notre après-midi à faire du snowboard.",
+      "description": "Nous avons commencé notre relation fin 2018 et un de nos premiers rendez-vous était à Blue Mountain. Une station de ski au nord de Toronto où nous avons passé notre après-midi à faire du snowboard.",
+      "date": "2018"
+    },
+    "christmas": {
+      "title": "Premier Noël",
+      "description": "À peine quelques semaines après le début de notre relation, Jill a invité Vianney a passer quelques jours en famille pour Noël où il a rencontré tous ces proches.",
       "date": "2018"
     },
     "france": {
       "title": "Premier voyage",
-      "description": "Notre premier voyage était en Europe au début de l'année 2019. Nous sommes allés en France et au Portugal. Jill y a rencontré la famille de Vianney pour la première fois.",
+      "description": "Notre premier voyage ensemble était en Europe au début de l'année 2019. Nous sommes allés en France et au Portugal. Jill y a rencontré une partie de la famille de Vianney.",
       "date": "2019"
     },
     "alberta": {
       "title": "Vacances d'été",
-      "description": "Durant l'été 2019 nous sommes partis à la découverte des rocheuses canadiennes où nous avons campés pendant une semaine.",
+      "description": "Durant l'été 2019 nous sommes partis à la découverte des rocheuses canadiennes où nous avons campés pendant une semaine dans les parcs nationaux.",
       "date": "2019"
     },
     "tofino": {
-      "title": "Surf trip dans le pacifique",
-      "description": "À l'automne de la même année, nous avons loué un van et des planches de surf pour profiter des vagues du pacifique sur l'île de vancouver à l'extrême ouest du Canada.",
+      "title": "Surf trip sur la côte pacifique",
+      "description": "À l'automne de la même année, nous avons loué un van et des planches de surf pour profiter des vagues du pacifique sur l'île de vancouver, située à l'extrême ouest du Canada.",
       "date": "2019"
     },
     "arizona": {
       "title": "Arizona",
-      "description": "Just before covid hit, we were able to spend some time in Arizona.",
+      "description": "Juste avant que la pandémie du Covid ne démarre, nous avons passé une semaine en Arizona avec la famille de Jill. Une belle coupure pendant l'hiver canadien.",
       "date": "2020"
     },
     "lake-superior": {
-      "title": "Lake Superior",
-      "description": "A long road trip around Lake Superior",
+      "title": "Le lac supérieur",
+      "description": "Pendant l'été 2020, nous avons fait un road de trip au nord de l'Ontario le long des lacs Huron et Supérieur, de Sudbury à Thunder Bay. Nous y avons vu des endroits magniques et beaucoup d'animaux sauvages.",
       "date": "2020"
     },
     "cambridge": {
-      "title": "Moving together",
-      "description": "We moved togther in a Condo in Cambridge",
+      "title": "Nous emménageons ensemble",
+      "description": "En fin d'année 2020, nous avions décidés de vivre ensemble. Nous avons trouvé un appartement au coeur d'Hespeler, un quartier de Cambridge (Ontario) depuis lequel nous avions accès à plein de sentiers.",
       "date": "2020"
     },
+    "quebec": {
+      "title": "Nous allons vivre au Québec",
+      "description": "Suite à une opportunité professionnelle pour Vianney, nous sommes partis nous installer dans la province voisine, au Québec. Nous sommes allés vivre dans la ville de Saint-Sauveur au nord de Montréal.",
+      "date": "2021"
+    },
+    "home": {
+      "title": "Nous achetons une maison",
+      "description": "En même temps que nous préparions le démménagement, nous avions commencé notre recherche de maison. Un peu sur un coup de folie, nous avons fait une proposion suite à une visite virtuelle. Nous l'avons eu et nous sommes très contents d'avoir pris ce risque.",
+      "date": "2021"
+    },
+    "bike-trip": {
+      "title": "Vacances à vélo",
+      "description": "Au cours de l'été 2022, nous avons fait le petit train du nord à vélo. Une piste cyclable qui part de Mont-Laurier et va jusqu'à Montréal. Une belle façon de dévouvrir la région.",
+      "date": "2022"
+    },
     "engagement": {
-      "title": "Engagement",
-      "description": "On November 26th Vianney proposed and Jill said \"Oui\".",
+      "title": "Fiançaille",
+      "description": "Le 26 novembre, lors d'un weekend dans un spa pour fêter nos quatre années de relation, Vianney a fait sa demande à Jill devant le couché de soleil au bord du lac.",
       "date": "2022"
     }
   },

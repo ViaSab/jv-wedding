@@ -20,42 +20,62 @@
     "title": "Our story",
     "first-date": {
       "title": "First date",
-      "description": "We started dating at the end of 2018 and one of our first dates was at Blue Mountain, where we spent an afternoon snowboarding.",
+      "description": "We started our relationship at the end of 2018 and one of our first dates was at Blue Mountain. A ski resort north of Toronto where we spent our afternoon snowboarding.",
+      "date": "2018"
+    },
+    "christmas": {
+      "title": "First Christmas",
+      "description": "Barely a few weeks after the start of our relationship, Jill invited Vianney to spend a few days with his family for Christmas where he met all his relatives.",
       "date": "2018"
     },
     "france": {
       "title": "First trip",
-      "description": "Our first trip was in Europe. We went to France and Portugal. Jill met Vianney's family for the first time.",
+      "description": "Our first trip together was to Europe at the beginning of 2019. We went to France and Portugal. Jill met part of Vianney's family there.",
       "date": "2019"
     },
     "alberta": {
       "title": "First summer vacation",
-      "description": "In summer 2019 we travelled to the Rockies in Alberta where we spent a week camping.",
+      "description": "During the summer of 2019 we set off to discover the Canadian Rockies where we camped for a week in the national parks.",
       "date": "2019"
     },
     "tofino": {
       "title": "Surfing on the west coast",
-      "description": "In Fall 2019 we went on a surf trip on the Vancouver Island.",
+      "description": "In the fall of the same year, we rented a van and surfboards to enjoy the waves of the Pacific on vancouver island, located in the far west of Canada.",
       "date": "2019"
     },
     "arizona": {
       "title": "Winter break in the sun",
-      "description": "Just before covid hit, we were able to spend some time in Arizona.",
+      "description": "Just before the Covid pandemic hit, we spent a week in Arizona with Jill's family. A nice break during the Canadian winter.",
       "date": "2020"
     },
     "lake-superior": {
       "title": "Visiting the North",
-      "description": "A long road trip around Lake Superior",
+      "description": "During the summer of 2020, we did a Northern Ontario road trip along Lakes Huron and Superior, from Sudbury to Thunder Bay. We saw beautiful places and lots of wild animals there.",
       "date": "2020"
     },
     "cambridge": {
       "title": "Moving together",
-      "description": "We moved togther in a Condo in Cambridge",
+      "description": "At the end of 2020, we decided to live together. We found an apartment in the heart of Hespeler, a neighborhood of Cambridge (Ontario) from which we had access to lots of trails.",
       "date": "2020"
+    },
+    "quebec": {
+      "title": "We're moving to Quebec",
+      "description": "Following a professional opportunity for Vianney, we moved to the neighboring province, Quebec. We went to live in the town of Saint-Sauveur north of Montreal.",
+      "date": "2021"
+    },
+    "home": {
+      "title": "We're buying a house",
+      "description": "At the same time that we were preparing the move, we're looking for a house to buy. A little on a stroke of madness, we made a proposal after a virtual visit. We got it and we are very happy to have taken this risk.",
+      "date": "2021"
+    },
+    "bike-trip": {
+      "title": "Bike tour in the Laurentides",
+      "description": "During the summer of 2022, we did the \" Petit Train du nord\" by bike. It is a bike trail that starts from Mont-Laurier and goes down to Montreal. A great way to discover the region.",
+      "date": "2022"
     },
     "engagement": {
       "title": "The proposal",
-      "description": "On November 26th Vianney proposed and Jill said \"Oui\".",
+      "description": "On November 26th, during a weekend at a spa to celebrate our four-year relationship, Vianney proposed to Jill in front of the sunset by the lake.",
       "date": "2022"
     }
   },

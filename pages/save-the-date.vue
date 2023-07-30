@@ -18,7 +18,7 @@ const displayFullscreen = () => {
   <div class="save-the-date">
     <video controls ref="stdvideo" @click="displayFullscreen()">
       <source src="/video/save-the-date.mp4" type="video/mp4" />
-      <img src="/img/save-the-date/invite.jpg" />
+      <!-- <img src="/img/save-the-date/invite.jpg" /> -->
     </video>
   </div>
 </template>

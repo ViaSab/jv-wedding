@@ -6,7 +6,7 @@ defineProps({
 </script>
 
 <template>
-  <el-row justify="center" align="middle" :gutter="30">
+  <el-row justify="center" align="middle" :gutter="30" class="block-info">
     <el-col :xs="24" :sm="12" :md="8" :lg="6">
       <div class="info__image">
         <img

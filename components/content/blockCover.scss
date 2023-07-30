@@ -1,24 +1,33 @@
 .cover {
-  background-color: $darker-color;
+  background-color: $primary-color;
   height: auto;
   position: relative;
   overflow: hidden;
-  margin: -20px -20px $space-30 -20px;
+  margin: -20px -20px $space-60 -20px;
 
   &__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    width: 50%;
     text-align: center;
-    text-shadow: 6px 6px 6px $darker-color;
+
+    @media only screen and (min-width: 768px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      width: 50%;
+    }
 
     h1 {
-      margin: $space-30 0 0 0;
+      margin: $space-30 0 $space-15 0;
       color: white;
-      font-size: 5em;
+      @media only screen and (min-width: 768px) {
+        font-size: 4em;
+        text-shadow: 6px 6px 6px $darker-color;
+      }
+      @media only screen and (min-width: 1200px) {
+        font-size: 5em;
+        text-shadow: 6px 6px 6px $darker-color;
+      }
     }
 
     p {
@@ -26,6 +35,9 @@
       font-size: 24px;
       font-family: $title-font;
       margin: 0 0 $space-30 0;
+      @media only screen and (min-width: 768px) {
+        text-shadow: 2px 2px 2px $darkest-color;
+      }
     }
   }
 }

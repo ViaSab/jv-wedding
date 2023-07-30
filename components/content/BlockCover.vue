@@ -7,10 +7,10 @@ defineProps({
 
 <template>
   <div class="cover">
+    <AppPicture :path="path" :alt="alt" />
     <div class="cover__content">
       <ContentSlot :use="$slots.default" />
     </div>
-    <AppPicture :path="path" :alt="alt" />
   </div>
 </template>
 

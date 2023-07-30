@@ -1,3 +1,11 @@
+<script setup>
+defineI18nRoute({
+  paths: {
+    fr: "/agenda",
+  },
+});
+</script>
+
 <template>
   <div class="center schedule">
     <ContentDoc />

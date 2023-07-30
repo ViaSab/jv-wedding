@@ -1,6 +1,12 @@
 <script setup>
 const photos = OUR_STORY_PHOTOS;
+defineI18nRoute({
+  paths: {
+    fr: "/notre-histoire",
+  },
+});
 </script>
+
 <template>
   <ElRow justify="center">
     <ElCol :xs="24" :md="18" :xl="12">

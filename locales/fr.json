@@ -14,7 +14,7 @@
     "schedule": "Agenda"
   },
   "footer": {
-    "text": "Réalisés avec passion par Jillian et Vianney"
+    "text": "Par Jillian et Vianney"
   },
   "our-story": {
     "title": "Notre histoire",
@@ -70,7 +70,7 @@
     },
     "bike-trip": {
       "title": "Vacances à vélo",
-      "description": "Au cours de l'été 2022, nous avons fait le petit train du nord à vélo. Une piste cyclable qui part de Mont-Laurier et va jusqu'à Montréal. Une belle façon de dévouvrir la région.",
+      "description": "Au cours de l'été 2022, nous avons fait une randonnée à vélo pendant 3 jours sur le petit train du nord. Une piste cyclable qui part de Mont-Laurier et va jusqu'à Montréal. Une belle façon de dévouvrir la région.",
       "date": "2022"
     },
     "engagement": {

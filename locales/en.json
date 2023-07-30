@@ -14,7 +14,7 @@
     "schedule": "Schedule"
   },
   "footer": {
-    "text": "Built with passion by Jillian and Vianney"
+    "text": "By Jillian and Vianney"
   },
   "our-story": {
     "title": "Our story",
@@ -25,12 +25,12 @@
     },
     "christmas": {
       "title": "First Christmas",
-      "description": "Barely a few weeks after the start of our relationship, Jill invited Vianney to spend a few days with his family for Christmas where he met all his relatives.",
+      "description": "Barely a few weeks after the start of our relationship, Jill invited Vianney to spend a few days with her family for Christmas where he met all his relatives.",
       "date": "2018"
     },
     "france": {
       "title": "First trip",
-      "description": "Our first trip together was to Europe at the beginning of 2019. We went to France and Portugal. Jill met part of Vianney's family there.",
+      "description": "Our first trip together was to Europe at the beginning of 2019. We went to France where Jill met most of Vianney's family, then we went surfing in Portugal.",
       "date": "2019"
     },
     "alberta": {
@@ -40,12 +40,12 @@
     },
     "tofino": {
       "title": "Surfing on the west coast",
-      "description": "In the fall of the same year, we rented a van and surfboards to enjoy the waves of the Pacific on vancouver island, located in the far west of Canada.",
+      "description": "In the fall of the same year, we flew to the west coast, rented a van and surfboards and enjoyed the waves of the Pacific coast off Vancouver Island.",
       "date": "2019"
     },
     "arizona": {
       "title": "Winter break in the sun",
-      "description": "Just before the Covid pandemic hit, we spent a week in Arizona with Jill's family. A nice break during the Canadian winter.",
+      "description": "Just before the Covid pandemic hit, we spent a week in Arizona with Jill's family. A nice break from the Canadian winter.",
       "date": "2020"
     },
     "lake-superior": {
@@ -64,13 +64,13 @@
       "date": "2021"
     },
     "home": {
-      "title": "We're buying a house",
+      "title": "We bought a house",
       "description": "At the same time that we were preparing the move, we're looking for a house to buy. A little on a stroke of madness, we made a proposal after a virtual visit. We got it and we are very happy to have taken this risk.",
       "date": "2021"
     },
     "bike-trip": {
       "title": "Bike tour in the Laurentides",
-      "description": "During the summer of 2022, we did the \" Petit Train du nord\" by bike. It is a bike trail that starts from Mont-Laurier and goes down to Montreal. A great way to discover the region.",
+      "description": "During the summer of 2022, we did a 3 day bike ride on the \" Petit Train du nord\". It is a bike trail that starts from Mont-Laurier and goes down to Montreal. A great way to discover the region.",
       "date": "2022"
     },
     "engagement": {

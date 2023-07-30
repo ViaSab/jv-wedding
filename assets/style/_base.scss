@@ -31,6 +31,10 @@ picture > source {
   display: block;
 }
 
+video {
+  cursor: pointer;
+}
+
 main {
   max-width: 1920px;
   align-self: center;

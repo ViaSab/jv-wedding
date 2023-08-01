@@ -16,7 +16,7 @@ const displayFullscreen = () => {
 
 <template>
   <div class="save-the-date">
-    <video controls ref="stdvideo" @click="displayFullscreen()">
+    <video controls ref="stdvideo" @click="displayFullscreen()" autoplay muted>
       <source src="/video/save-the-date.mp4" type="video/mp4" />
       <img src="/img/save-the-date/invite.jpg" />
     </video>
@@ -27,7 +27,7 @@ const displayFullscreen = () => {
 .save-the-date {
   margin: -20px;
   video {
-    max-height: calc(100vh - 100px);
+    max-height: calc(100vh - 95px);
   }
 }
 </style>

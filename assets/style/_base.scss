@@ -44,4 +44,9 @@ hr {
   border-top: 1px solid $secondary-color;
   width: 50%;
   margin: $space-30 auto;
+
+  &.variant {
+    border-top: 1px solid $tertiary-color;
+    width: 98%;
+  }
 }

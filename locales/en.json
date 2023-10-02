@@ -81,5 +81,10 @@
   },
   "photos": {
     "title": "Our Photos"
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "submit": "Submit",
+    "full-name": "Full Name"
   }
 }

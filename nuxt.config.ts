@@ -15,6 +15,10 @@ export default defineNuxtConfig({
     "@element-plus/nuxt",
     // Multi-language
     "@nuxtjs/i18n",
+    // Collection of utilities
+    "@vueuse/nuxt",
+    // Dev Tools
+    "@nuxt/devtools",
   ],
   i18n: {
     locales: ["en", "fr"],

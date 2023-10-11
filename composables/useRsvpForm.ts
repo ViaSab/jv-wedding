@@ -16,9 +16,12 @@ interface UseRsvpForm {
   rsvpForm: RsvpForm;
   rsvpFormRules: FormRules;
   submitRsvpForm: (formEl: FormInstance | undefined) => Promise<void>;
+  hideForm: Ref<boolean>;
 }
 
 const useRsvpForm = (): UseRsvpForm => {
+  const hideForm = ref<boolean>(false);
+
   const rsvpForm = reactive<RsvpForm>({
     name: "",
     isAttending: true,
@@ -48,9 +51,10 @@ const useRsvpForm = (): UseRsvpForm => {
         console.log("error submit!", fields);
       }
     });
+    hideForm.value = true;
   };
 
-  return { rsvpForm, rsvpFormRules, submitRsvpForm };
+  return { rsvpForm, rsvpFormRules, submitRsvpForm, hideForm };
 };
 
 export default useRsvpForm;

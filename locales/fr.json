@@ -1,6 +1,8 @@
 {
   "common": {
-    "other-language": "EN"
+    "other-language": "EN",
+    "yes": "Oui",
+    "no": "Non"
   },
   "header": {
     "top-bar": "Site en constrution. Plus de contenu à venir...",
@@ -81,5 +83,21 @@
   },
   "photos": {
     "title": "Nos photos"
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "guest-name": "Votre nom :",
+    "guest-attendance": "Viendrez-vous ?",
+    "guest-appetizer": "Votre choix d'entrée :",
+    "guest-main-course": "Votre choix de plat :",
+    "guest-plus-one": "Avez-vous un.e invité.e ?",
+    "plus-one-name": "Nom de l'invité.e :",
+    "plus-one-appetizer": "Choix de l'entrée de votre invité.e :",
+    "plus-one-main-course": "Choix du plat de votre invité.e :",
+    "meat": "Viande",
+    "vegan": "Végan",
+    "comments": "Commentaires :",
+    "comments-placeholder": "Suggestions de chansons ?",
+    "send": "Envoyer"
   }
 }

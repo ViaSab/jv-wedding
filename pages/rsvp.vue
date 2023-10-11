@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { FormInstance } from "element-plus";
-
 const { rsvpForm, rsvpFormRules, submitRsvpForm } = useRsvpForm();
 const rsvpFormRef = ref<FormInstance>();
 </script>
@@ -14,75 +13,82 @@ const rsvpFormRef = ref<FormInstance>();
   <hr class="variant" />
   <ElRow>
     <ElCol>
+      <!-- data-netlify="true" -->
       <ElForm
         :model="rsvpForm"
         :rules="rsvpFormRules"
         ref="rsvpFormRef"
         size="large"
         name="RSVP"
-        data-netlify="true"
         label-position="right"
-        label-width="240px"
+        label-width="265px"
       >
-        <ElFormItem label="Your Name">
+        <ElFormItem :label="$t('rsvp.guest-name')">
           <ElInput v-model="rsvpForm.name" />
         </ElFormItem>
-        <ElFormItem label="Are you attending?">
+        <ElFormItem :label="$t('rsvp.guest-attendance')">
           <ElRadioGroup v-model="rsvpForm.isAttending">
-            <ElRadio :label="true">Yes</ElRadio>
-            <ElRadio :label="false">No</ElRadio>
+            <ElRadio :label="true">{{ $t("common.yes") }}</ElRadio>
+            <ElRadio :label="false">{{ $t("common.no") }}</ElRadio>
           </ElRadioGroup>
         </ElFormItem>
         <ElCollapseTransition>
           <div v-show="rsvpForm.isAttending">
-            <ElFormItem label="Your appetizer choice?">
+            <ElFormItem :label="$t('rsvp.guest-appetizer')">
               <ElRadioGroup v-model="rsvpForm.appetizer">
-                <ElRadio label="meat">Meat</ElRadio>
-                <ElRadio label="vegan">Vegan</ElRadio>
+                <ElRadio label="meat">{{ $t("rsvp.meat") }}</ElRadio>
+                <ElRadio label="vegan">{{ $t("rsvp.vegan") }}</ElRadio>
               </ElRadioGroup>
             </ElFormItem>
-            <ElFormItem label="Your main course choice?">
+            <ElFormItem :label="$t('rsvp.guest-main-course')">
               <ElRadioGroup v-model="rsvpForm.mainCourse">
-                <ElRadio label="meat">Meat</ElRadio>
-                <ElRadio label="vegan">Vegan</ElRadio>
+                <ElRadio label="meat">{{ $t("rsvp.meat") }}</ElRadio>
+                <ElRadio label="vegan">{{ $t("rsvp.vegan") }}</ElRadio>
               </ElRadioGroup>
             </ElFormItem>
-            <ElFormItem label="Do you have a guest?">
+            <ElFormItem :label="$t('rsvp.guest-plus-one')">
               <ElRadioGroup v-model="rsvpForm.hasPlusOne">
-                <ElRadio :label="true">Yes</ElRadio>
-                <ElRadio :label="false">No</ElRadio>
+                <ElRadio :label="true">{{ $t("common.yes") }}</ElRadio>
+                <ElRadio :label="false">{{ $t("common.no") }}</ElRadio>
               </ElRadioGroup>
             </ElFormItem>
             <ElCollapseTransition>
               <div v-show="rsvpForm.hasPlusOne">
                 <hr class="variant" />
-                <ElFormItem label="Guest Name" v-model="rsvpForm.plusOneName">
+                <ElFormItem
+                  :label="$t('rsvp.plus-one-name')"
+                  v-model="rsvpForm.plusOneName"
+                >
                   <ElInput />
                 </ElFormItem>
-                <ElFormItem label="Your guest appetizer choice?">
+                <ElFormItem :label="$t('rsvp.plus-one-appetizer')">
                   <ElRadioGroup v-model="rsvpForm.plusOneAppetizer">
-                    <ElRadio label="meat">Meat</ElRadio>
-                    <ElRadio label="vegan">Vegan</ElRadio>
+                    <ElRadio label="meat">{{ $t("rsvp.meat") }}</ElRadio>
+                    <ElRadio label="vegan">{{ $t("rsvp.vegan") }}</ElRadio>
                   </ElRadioGroup>
                 </ElFormItem>
-                <ElFormItem label="Your guest main course choice?">
+                <ElFormItem :label="$t('rsvp.plus-one-main-course')">
                   <ElRadioGroup v-model="rsvpForm.plusOneMainCourse">
-                    <ElRadio label="meat">Meat</ElRadio>
-                    <ElRadio label="vegan">Vegan</ElRadio>
+                    <ElRadio label="meat">{{ $t("rsvp.meat") }}</ElRadio>
+                    <ElRadio label="vegan">{{ $t("rsvp.vegan") }}</ElRadio>
                   </ElRadioGroup>
                 </ElFormItem>
                 <hr class="variant" />
               </div>
             </ElCollapseTransition>
-            <ElFormItem label="Any song suggestions?">
-              <ElInput v-model="rsvpForm.songs" type="textarea" />
+            <ElFormItem :label="$t('rsvp.comments')">
+              <ElInput
+                v-model="rsvpForm.songs"
+                type="textarea"
+                :placeholder="$t('rsvp.comments-placeholder')"
+              />
             </ElFormItem>
           </div>
         </ElCollapseTransition>
         <hr class="variant" />
         <ElFormItem>
           <ElButton type="primary" @click="submitRsvpForm(rsvpFormRef)">
-            Submit
+            {{ $t("rsvp.send") }}
           </ElButton>
         </ElFormItem>
       </ElForm>
@@ -92,6 +98,8 @@ const rsvpFormRef = ref<FormInstance>();
 
 <style lang="scss" scoped>
 form {
-  min-width: 600px;
+  @media only screen and (min-width: 640px) {
+    min-width: 600px;
+  }
 }
 </style>

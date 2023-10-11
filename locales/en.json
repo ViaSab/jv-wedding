@@ -1,6 +1,8 @@
 {
   "common": {
-    "other-language": "FR"
+    "other-language": "FR",
+    "yes": "Yes",
+    "no": "No"
   },
   "header": {
     "top-bar": "Work in progress. More details coming...",
@@ -84,7 +86,18 @@
   },
   "rsvp": {
     "title": "RSVP",
-    "submit": "Submit",
-    "full-name": "Full Name"
+    "guest-name": "Your name:",
+    "guest-attendance": "Are you attending?",
+    "guest-appetizer": "Your appetizer choice:",
+    "guest-main-course": "Your main course choice:",
+    "guest-plus-one": "Do you have a guest?",
+    "plus-one-name": "Guest name:",
+    "plus-one-appetizer": "Your guest appetizer choice:",
+    "plus-one-main-course": "Your guest main course choice:",
+    "meat": "Meat",
+    "vegan": "Vegan",
+    "comments": "Comments:",
+    "comments-placeholder": "Any song suggestions?",
+    "send": "Send"
   }
 }

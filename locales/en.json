@@ -88,16 +88,21 @@
     "title": "RSVP",
     "guest-name": "Your name:",
     "guest-attendance": "Are you attending?",
-    "guest-appetizer": "Your appetizer choice:",
-    "guest-main-course": "Your main course choice:",
+    "guest-appetizer": "Appetizer choice:",
+    "guest-main-course": "Main course choice:",
     "guest-plus-one": "Do you have a guest?",
     "plus-one-name": "Guest name:",
-    "plus-one-appetizer": "Your guest appetizer choice:",
-    "plus-one-main-course": "Your guest main course choice:",
+    "plus-one-appetizer": "Appetizer choice:",
+    "plus-one-main-course": "Main course choice:",
     "meat": "Meat",
     "vegan": "Vegan",
     "comments": "Comments:",
-    "comments-placeholder": "Any song suggestions?",
+    "comments-placeholder": "Any song suggestion?",
     "send": "Send"
+  },
+  "form": {
+    "title": "Form successfully sent!",
+    "description": "Thank you for replying to our invitation.",
+    "link": "Go back to the homepage"
   }
 }

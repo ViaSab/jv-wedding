@@ -1,4 +1,5 @@
 import { FormInstance, FormRules } from "element-plus";
+const { t } = useI18n();
 
 interface RsvpForm {
   name: string;
@@ -16,11 +17,11 @@ interface UseRsvpForm {
   rsvpForm: RsvpForm;
   rsvpFormRules: FormRules;
   submitRsvpForm: (formEl: FormInstance | undefined) => Promise<void>;
-  hideForm: Ref<boolean>;
+  showForm: Ref<boolean>;
 }
 
 const useRsvpForm = (): UseRsvpForm => {
-  const hideForm = ref<boolean>(false);
+  const showForm = ref<boolean>(true);
 
   const rsvpForm = reactive<RsvpForm>({
     name: "",
@@ -35,7 +36,13 @@ const useRsvpForm = (): UseRsvpForm => {
   });
 
   const rsvpFormRules = reactive<FormRules>({
-    name: [],
+    name: [
+      {
+        required: true,
+        message: "Please input Activity name",
+        trigger: "blur",
+      },
+    ],
     songs: [],
   });
 
@@ -51,10 +58,10 @@ const useRsvpForm = (): UseRsvpForm => {
         console.log("error submit!", fields);
       }
     });
-    hideForm.value = true;
+    showForm.value = false;
   };
 
-  return { rsvpForm, rsvpFormRules, submitRsvpForm, hideForm };
+  return { rsvpForm, rsvpFormRules, submitRsvpForm, showForm };
 };
 
 export default useRsvpForm;

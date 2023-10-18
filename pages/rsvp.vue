@@ -1,9 +1,20 @@
 <script setup lang="ts">
 import type { FormInstance } from "element-plus";
 
-const { rsvpForm, rsvpFormRules, showForm, submitRsvpForm } = useRsvpForm();
+const { rsvpForm, rsvpFormRules, showForm } = useRsvpForm();
 const { isMobile } = useResponsive();
 const rsvpFormRef = ref<FormInstance>();
+
+const submitRsvpForm = async (): Promise<void> => {
+  if (!rsvpFormRef.value) return;
+  await rsvpFormRef.value?.validate((valid) => {
+    if (valid) {
+      console.log("submit", rsvpFormRef.value);
+      showForm.value = false;
+      rsvpFormRef.value?.$el.submit();
+    }
+  });
+};
 </script>
 
 <template>
@@ -26,8 +37,15 @@ const rsvpFormRef = ref<FormInstance>();
         size="large"
         label-width="250px"
         name="RSVP"
+        method="post"
+        action="/index"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
       >
+        <input type="hidden" name="form-name" value="RSVP" />
+        <p hidden>
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
         <ElFormItem :label="$t('rsvp.guest-name')" prop="name">
           <ElInput v-model="rsvpForm.name" />
         </ElFormItem>
@@ -98,9 +116,7 @@ const rsvpFormRef = ref<FormInstance>();
         </ElCollapseTransition>
         <hr class="variant" />
         <ElFormItem>
-          <ElButton type="primary" @click="submitRsvpForm(rsvpFormRef)">
-            {{ $t("rsvp.send") }}
-          </ElButton>
+          <button type="submit" class="button">{{ $t("rsvp.send") }}</button>
         </ElFormItem>
       </ElForm>
       <FormResponse v-else />

@@ -15,7 +15,6 @@ interface RsvpForm {
 interface UseRsvpForm {
   rsvpForm: RsvpForm;
   rsvpFormRules: ComputedRef<FormRules>;
-  submitRsvpForm: (formEl: FormInstance | undefined) => Promise<void>;
   showForm: Ref<boolean>;
 }
 
@@ -94,20 +93,7 @@ const useRsvpForm = (): UseRsvpForm => {
     ],
   }));
 
-  const submitRsvpForm = async (
-    formEl: FormInstance | undefined
-  ): Promise<void> => {
-    if (!formEl) return;
-    await formEl.validate((valid) => {
-      if (valid) {
-        console.log("submit");
-        formEl.$el.submit();
-        showForm.value = false;
-      }
-    });
-  };
-
-  return { rsvpForm, rsvpFormRules, submitRsvpForm, showForm };
+  return { rsvpForm, rsvpFormRules, showForm };
 };
 
 export default useRsvpForm;

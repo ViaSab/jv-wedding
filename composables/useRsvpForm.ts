@@ -1,4 +1,4 @@
-import { FormInstance, FormRules } from "element-plus";
+import { FormRules } from "element-plus";
 
 interface RsvpForm {
   name: string;
@@ -15,12 +15,10 @@ interface RsvpForm {
 interface UseRsvpForm {
   rsvpForm: RsvpForm;
   rsvpFormRules: ComputedRef<FormRules>;
-  showForm: Ref<boolean>;
 }
 
 const useRsvpForm = (): UseRsvpForm => {
   const { t } = useI18n();
-  const showForm = ref<boolean>(true);
 
   const rsvpForm = reactive<RsvpForm>({
     name: "",
@@ -93,7 +91,7 @@ const useRsvpForm = (): UseRsvpForm => {
     ],
   }));
 
-  return { rsvpForm, rsvpFormRules, showForm };
+  return { rsvpForm, rsvpFormRules };
 };
 
 export default useRsvpForm;

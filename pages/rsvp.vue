@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { FormInstance } from "element-plus";
 
-const { rsvpForm, rsvpFormRules, showForm } = useRsvpForm();
+const { rsvpForm, rsvpFormRules } = useRsvpForm();
 const { isMobile } = useResponsive();
 const rsvpFormRef = ref<FormInstance>();
 
@@ -9,8 +9,6 @@ const submitRsvpForm = async (): Promise<void> => {
   if (!rsvpFormRef.value) return;
   await rsvpFormRef.value?.validate((valid) => {
     if (valid) {
-      console.log("submit", rsvpFormRef.value);
-      showForm.value = false;
       rsvpFormRef.value?.$el.submit();
     }
   });
@@ -28,7 +26,6 @@ const submitRsvpForm = async (): Promise<void> => {
     <ElCol>
       <div class="container"></div>
       <ElForm
-        v-if="showForm"
         :model="rsvpForm"
         :rules="rsvpFormRules"
         :validate-on-rule-change="false"
@@ -38,19 +35,20 @@ const submitRsvpForm = async (): Promise<void> => {
         label-width="250px"
         name="RSVP"
         method="post"
-        action="/index"
+        action="/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        @submit.prevent="submitRsvpForm"
       >
         <input type="hidden" name="form-name" value="RSVP" />
         <p hidden>
           <label>Don’t fill this out: <input name="bot-field" /></label>
         </p>
         <ElFormItem :label="$t('rsvp.guest-name')" prop="name">
-          <ElInput v-model="rsvpForm.name" />
+          <ElInput v-model="rsvpForm.name" name="name" />
         </ElFormItem>
         <ElFormItem :label="$t('rsvp.guest-attendance')" prop="isAttending">
-          <ElRadioGroup v-model="rsvpForm.isAttending">
+          <ElRadioGroup v-model="rsvpForm.isAttending" name="Attendance">
             <ElRadio :label="true">{{ $t("common.yes") }}</ElRadio>
             <ElRadio :label="false">{{ $t("common.no") }}</ElRadio>
           </ElRadioGroup>
@@ -58,19 +56,19 @@ const submitRsvpForm = async (): Promise<void> => {
         <ElCollapseTransition>
           <div v-show="rsvpForm.isAttending">
             <ElFormItem :label="$t('rsvp.guest-appetizer')" prop="appetizer">
-              <ElRadioGroup v-model="rsvpForm.appetizer">
-                <ElRadio label="meat">{{ $t("rsvp.meat") }}</ElRadio>
-                <ElRadio label="vegan">{{ $t("rsvp.vegan") }}</ElRadio>
+              <ElRadioGroup v-model="rsvpForm.appetizer" name="Appetizer">
+                <ElRadio label="Meat">{{ $t("rsvp.meat") }}</ElRadio>
+                <ElRadio label="Vegan">{{ $t("rsvp.vegan") }}</ElRadio>
               </ElRadioGroup>
             </ElFormItem>
             <ElFormItem :label="$t('rsvp.guest-main-course')" prop="mainCourse">
-              <ElRadioGroup v-model="rsvpForm.mainCourse">
-                <ElRadio label="meat">{{ $t("rsvp.meat") }}</ElRadio>
-                <ElRadio label="vegan">{{ $t("rsvp.vegan") }}</ElRadio>
+              <ElRadioGroup v-model="rsvpForm.mainCourse" name="Main course">
+                <ElRadio label="Meat">{{ $t("rsvp.meat") }}</ElRadio>
+                <ElRadio label="Vegan">{{ $t("rsvp.vegan") }}</ElRadio>
               </ElRadioGroup>
             </ElFormItem>
             <ElFormItem :label="$t('rsvp.guest-plus-one')" prop="hasPlusOne">
-              <ElRadioGroup v-model="rsvpForm.hasPlusOne">
+              <ElRadioGroup v-model="rsvpForm.hasPlusOne" name="Has a guest">
                 <ElRadio :label="true">{{ $t("common.yes") }}</ElRadio>
                 <ElRadio :label="false">{{ $t("common.no") }}</ElRadio>
               </ElRadioGroup>
@@ -82,24 +80,30 @@ const submitRsvpForm = async (): Promise<void> => {
                   :label="$t('rsvp.plus-one-name')"
                   prop="plusOneName"
                 >
-                  <ElInput v-model="rsvpForm.plusOneName" />
+                  <ElInput v-model="rsvpForm.plusOneName" name="Guest name" />
                 </ElFormItem>
                 <ElFormItem
                   :label="$t('rsvp.plus-one-appetizer')"
                   prop="plusOneAppetizer"
                 >
-                  <ElRadioGroup v-model="rsvpForm.plusOneAppetizer">
-                    <ElRadio label="meat">{{ $t("rsvp.meat") }}</ElRadio>
-                    <ElRadio label="vegan">{{ $t("rsvp.vegan") }}</ElRadio>
+                  <ElRadioGroup
+                    v-model="rsvpForm.plusOneAppetizer"
+                    name="Guest appetizer"
+                  >
+                    <ElRadio label="Meat">{{ $t("rsvp.meat") }}</ElRadio>
+                    <ElRadio label="Vegan">{{ $t("rsvp.vegan") }}</ElRadio>
                   </ElRadioGroup>
                 </ElFormItem>
                 <ElFormItem
                   :label="$t('rsvp.plus-one-main-course')"
                   prop="plusOneMainCourse"
                 >
-                  <ElRadioGroup v-model="rsvpForm.plusOneMainCourse">
-                    <ElRadio label="meat">{{ $t("rsvp.meat") }}</ElRadio>
-                    <ElRadio label="vegan">{{ $t("rsvp.vegan") }}</ElRadio>
+                  <ElRadioGroup
+                    v-model="rsvpForm.plusOneMainCourse"
+                    name="Guest main course"
+                  >
+                    <ElRadio label="Meat">{{ $t("rsvp.meat") }}</ElRadio>
+                    <ElRadio label="Vegan">{{ $t("rsvp.vegan") }}</ElRadio>
                   </ElRadioGroup>
                 </ElFormItem>
                 <hr class="variant" />
@@ -110,6 +114,7 @@ const submitRsvpForm = async (): Promise<void> => {
                 v-model="rsvpForm.songs"
                 type="textarea"
                 :placeholder="$t('rsvp.comments-placeholder')"
+                name="Comments"
               />
             </ElFormItem>
           </div>
@@ -119,7 +124,6 @@ const submitRsvpForm = async (): Promise<void> => {
           <button type="submit" class="button">{{ $t("rsvp.send") }}</button>
         </ElFormItem>
       </ElForm>
-      <FormResponse v-else />
     </ElCol>
   </ElRow>
 </template>

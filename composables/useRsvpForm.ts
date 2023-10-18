@@ -101,7 +101,7 @@ const useRsvpForm = (): UseRsvpForm => {
     await formEl.validate((valid) => {
       if (valid) {
         console.log("submit");
-        //formEl.$el.submit();
+        formEl.$el.submit();
         showForm.value = false;
       }
     });

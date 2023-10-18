@@ -103,6 +103,11 @@
   "form": {
     "title": "Form successfully sent!",
     "description": "Thank you for replying to our invitation.",
-    "link": "Go back to the homepage"
+    "link": "Go back to the homepage",
+    "validation": {
+      "name": "Please enter your name",
+      "option": "Please select an option",
+      "guest-name": "Please enter your guest name"
+    }
   }
 }

@@ -103,6 +103,11 @@
   "form": {
     "title": "Formulaire envoyé avec succès!",
     "description": "merci d'avoir répondu à notre invitation.",
-    "link": "Retour à l'accueil"
+    "link": "Retour à l'accueil",
+    "validation": {
+      "name": "Veuillez entrer votre nom",
+      "option": "Veuillez choisir une option",
+      "guest-name": "Veuillez entrer le nom de votre invité.e"
+    }
   }
 }

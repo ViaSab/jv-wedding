@@ -1,10 +1,9 @@
 import { FormInstance, FormRules } from "element-plus";
-const { t } = useI18n();
 
 interface RsvpForm {
   name: string;
-  isAttending: boolean;
-  hasPlusOne: boolean;
+  isAttending: boolean | undefined;
+  hasPlusOne: boolean | undefined;
   appetizer: string;
   mainCourse: string;
   plusOneName: string;
@@ -15,18 +14,19 @@ interface RsvpForm {
 
 interface UseRsvpForm {
   rsvpForm: RsvpForm;
-  rsvpFormRules: FormRules;
+  rsvpFormRules: ComputedRef<FormRules>;
   submitRsvpForm: (formEl: FormInstance | undefined) => Promise<void>;
   showForm: Ref<boolean>;
 }
 
 const useRsvpForm = (): UseRsvpForm => {
+  const { t } = useI18n();
   const showForm = ref<boolean>(true);
 
   const rsvpForm = reactive<RsvpForm>({
     name: "",
-    isAttending: true,
-    hasPlusOne: true,
+    isAttending: undefined,
+    hasPlusOne: undefined,
     appetizer: "",
     mainCourse: "",
     plusOneName: "",
@@ -35,30 +35,76 @@ const useRsvpForm = (): UseRsvpForm => {
     songs: "",
   });
 
-  const rsvpFormRules = reactive<FormRules>({
+  const rsvpFormRules = computed<FormRules<RsvpForm>>(() => ({
     name: [
       {
         required: true,
-        message: "Please input Activity name",
+        message: t("form.validation.name"),
         trigger: "blur",
       },
     ],
-    songs: [],
-  });
+    isAttending: [
+      {
+        required: true,
+        message: t("form.validation.option"),
+        trigger: "change",
+      },
+    ],
+    appetizer: [
+      {
+        required: rsvpForm.isAttending,
+        message: t("form.validation.option"),
+        trigger: "change",
+      },
+    ],
+    mainCourse: [
+      {
+        required: rsvpForm.isAttending,
+        message: t("form.validation.option"),
+        trigger: "change",
+      },
+    ],
+    hasPlusOne: [
+      {
+        required: rsvpForm.isAttending,
+        message: t("form.validation.option"),
+        trigger: "change",
+      },
+    ],
+    plusOneName: [
+      {
+        required: rsvpForm.isAttending && rsvpForm.hasPlusOne,
+        message: t("form.validation.guest-name"),
+        trigger: "blur",
+      },
+    ],
+    plusOneAppetizer: [
+      {
+        required: rsvpForm.isAttending && rsvpForm.hasPlusOne,
+        message: t("form.validation.option"),
+        trigger: "change",
+      },
+    ],
+    plusOneMainCourse: [
+      {
+        required: rsvpForm.isAttending && rsvpForm.hasPlusOne,
+        message: t("form.validation.option"),
+        trigger: "change",
+      },
+    ],
+  }));
 
   const submitRsvpForm = async (
     formEl: FormInstance | undefined
   ): Promise<void> => {
     if (!formEl) return;
-    await formEl.validate((valid, fields) => {
+    await formEl.validate((valid) => {
       if (valid) {
-        console.log("submit!");
-        //formEl.submit()
-      } else {
-        console.log("error submit!", fields);
+        console.log("submit");
+        //formEl.$el.submit();
+        showForm.value = false;
       }
     });
-    showForm.value = false;
   };
 
   return { rsvpForm, rsvpFormRules, submitRsvpForm, showForm };

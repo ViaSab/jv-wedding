@@ -38,6 +38,7 @@ video {
 main {
   max-width: 1920px;
   align-self: center;
+  min-height: calc(100vh - 183px);
 }
 
 hr {

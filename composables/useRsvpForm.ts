@@ -15,6 +15,7 @@ interface RsvpForm {
 interface UseRsvpForm {
   rsvpForm: RsvpForm;
   rsvpFormRules: ComputedRef<FormRules>;
+  resetForm: () => void;
 }
 
 const useRsvpForm = (): UseRsvpForm => {
@@ -31,6 +32,28 @@ const useRsvpForm = (): UseRsvpForm => {
     plusOneMainCourse: "",
     songs: "",
   });
+
+  const resetPlusOne = (): void => {
+    rsvpForm.plusOneName = "";
+    rsvpForm.plusOneAppetizer = "";
+    rsvpForm.plusOneMainCourse = "";
+  };
+
+  const resetGuest = (): void => {
+    rsvpForm.appetizer = "";
+    rsvpForm.mainCourse = "";
+  };
+
+  const resetForm = (): void => {
+    console.log("RESET", rsvpForm);
+    if (!rsvpForm.hasPlusOne) {
+      resetPlusOne();
+    }
+    if (!rsvpForm.isAttending) {
+      resetGuest();
+      resetPlusOne();
+    }
+  };
 
   const rsvpFormRules = computed<FormRules<RsvpForm>>(() => ({
     name: [
@@ -91,7 +114,7 @@ const useRsvpForm = (): UseRsvpForm => {
     ],
   }));
 
-  return { rsvpForm, rsvpFormRules };
+  return { rsvpForm, rsvpFormRules, resetForm };
 };
 
 export default useRsvpForm;

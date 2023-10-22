@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import type { FormInstance } from "element-plus";
 
-const { rsvpForm, rsvpFormRules } = useRsvpForm();
+const { rsvpForm, rsvpFormRules, resetForm } = useRsvpForm();
 const { isMobile } = useResponsive();
+const localePath = useLocalePath();
+
 const rsvpFormRef = ref<FormInstance>();
 
 const submitRsvpForm = async (): Promise<void> => {
@@ -35,7 +37,7 @@ const submitRsvpForm = async (): Promise<void> => {
         label-width="250px"
         name="RSVP"
         method="post"
-        action="/"
+        :action="localePath('form-success')"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         @submit.prevent="submitRsvpForm"
@@ -45,10 +47,14 @@ const submitRsvpForm = async (): Promise<void> => {
           <label>Don’t fill this out: <input name="bot-field" /></label>
         </p>
         <ElFormItem :label="$t('rsvp.guest-name')" prop="name">
-          <ElInput v-model="rsvpForm.name" name="name" />
+          <ElInput v-model="rsvpForm.name" name="Name" />
         </ElFormItem>
         <ElFormItem :label="$t('rsvp.guest-attendance')" prop="isAttending">
-          <ElRadioGroup v-model="rsvpForm.isAttending" name="Attendance">
+          <ElRadioGroup
+            v-model="rsvpForm.isAttending"
+            name="Attendance"
+            @change="resetForm()"
+          >
             <ElRadio :label="true">{{ $t("common.yes") }}</ElRadio>
             <ElRadio :label="false">{{ $t("common.no") }}</ElRadio>
           </ElRadioGroup>
@@ -68,7 +74,11 @@ const submitRsvpForm = async (): Promise<void> => {
               </ElRadioGroup>
             </ElFormItem>
             <ElFormItem :label="$t('rsvp.guest-plus-one')" prop="hasPlusOne">
-              <ElRadioGroup v-model="rsvpForm.hasPlusOne" name="Has a guest">
+              <ElRadioGroup
+                v-model="rsvpForm.hasPlusOne"
+                name="Has a guest"
+                @change="resetForm()"
+              >
                 <ElRadio :label="true">{{ $t("common.yes") }}</ElRadio>
                 <ElRadio :label="false">{{ $t("common.no") }}</ElRadio>
               </ElRadioGroup>

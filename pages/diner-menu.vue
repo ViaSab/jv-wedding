@@ -1,19 +1,19 @@
 <script setup>
 defineI18nRoute({
   paths: {
-    fr: "/agenda",
+    fr: "/menu-diner",
   },
 });
 </script>
 
 <template>
-  <div class="center schedule">
+  <div class="center menu">
     <ContentDoc />
   </div>
 </template>
 
 <style lang="scss">
-.schedule {
+.menu {
   img {
     max-width: 180px;
     max-height: 100px;

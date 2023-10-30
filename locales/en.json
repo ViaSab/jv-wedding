@@ -2,7 +2,8 @@
   "common": {
     "other-language": "FR",
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "see-menu": "See diner menu"
   },
   "header": {
     "top-bar": "Work in progress. More details coming...",
@@ -13,7 +14,11 @@
     "index": "Home",
     "photos": "Photos",
     "our-story": "Our Story",
-    "schedule": "Schedule"
+    "schedule": "Schedule",
+    "diner-menu": "Menu"
+  },
+  "menu": {
+    "title": "Menu"
   },
   "footer": {
     "text": "By Jillian and Vianney"

@@ -45,7 +45,6 @@ const useRsvpForm = (): UseRsvpForm => {
   };
 
   const resetForm = (): void => {
-    console.log("RESET", rsvpForm);
     if (!rsvpForm.hasPlusOne) {
       resetPlusOne();
     }

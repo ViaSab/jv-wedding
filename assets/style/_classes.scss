@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.right {
+  text-align: right;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -27,5 +31,20 @@
 
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.link {
+  color: $primary-color;
+  text-decoration: underline;
+  border: none;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+    color: black;
   }
 }

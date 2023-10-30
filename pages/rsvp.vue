@@ -7,6 +7,8 @@ const localePath = useLocalePath();
 
 const rsvpFormRef = ref<FormInstance>();
 
+const openDrawer = ref<boolean>(false);
+
 const submitRsvpForm = async (): Promise<void> => {
   if (!rsvpFormRef.value) return;
   await rsvpFormRef.value?.validate((valid) => {
@@ -61,6 +63,11 @@ const submitRsvpForm = async (): Promise<void> => {
         </ElFormItem>
         <ElCollapseTransition>
           <div v-show="rsvpForm.isAttending">
+            <div class="right">
+              <button class="link" @click.prevent="openDrawer = !openDrawer">
+                {{ $t("common.see-menu") }}
+              </button>
+            </div>
             <ElFormItem :label="$t('rsvp.guest-appetizer')" prop="appetizer">
               <ElRadioGroup v-model="rsvpForm.appetizer" name="Appetizer">
                 <ElRadio label="Meat">{{ $t("rsvp.meat") }}</ElRadio>
@@ -92,6 +99,14 @@ const submitRsvpForm = async (): Promise<void> => {
                 >
                   <ElInput v-model="rsvpForm.plusOneName" name="Guest name" />
                 </ElFormItem>
+                <div class="right">
+                  <button
+                    class="link"
+                    @click.prevent="openDrawer = !openDrawer"
+                  >
+                    {{ $t("common.see-menu") }}
+                  </button>
+                </div>
                 <ElFormItem
                   :label="$t('rsvp.plus-one-appetizer')"
                   prop="plusOneAppetizer"
@@ -136,12 +151,38 @@ const submitRsvpForm = async (): Promise<void> => {
       </ElForm>
     </ElCol>
   </ElRow>
+  <ElDrawer
+    v-model="openDrawer"
+    modal-class="menu"
+    :append-to-body="true"
+    :lock-scroll="true"
+  >
+    <ContentDoc :path="localePath('/diner-menu')" />
+  </ElDrawer>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .container {
   @media only screen and (min-width: 640px) {
     min-width: 600px;
+  }
+}
+
+.menu {
+  text-align: center;
+
+  header {
+    margin-bottom: 0;
+  }
+
+  img {
+    max-width: 180px;
+    max-height: 100px;
+    margin-bottom: 15px;
+  }
+
+  em {
+    color: $primary-light-color;
   }
 }
 </style>

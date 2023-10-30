@@ -2,7 +2,8 @@
   "common": {
     "other-language": "EN",
     "yes": "Oui",
-    "no": "Non"
+    "no": "Non",
+    "see-menu": "Voir le menu du diner"
   },
   "header": {
     "top-bar": "Site en constrution. Plus de contenu à venir...",
@@ -13,7 +14,8 @@
     "index": "Accueil",
     "photos": "Photos",
     "our-story": "Notre histoire",
-    "schedule": "Agenda"
+    "schedule": "Agenda",
+    "diner-menu": "Menu"
   },
   "footer": {
     "text": "Par Jillian et Vianney"
@@ -83,6 +85,9 @@
   },
   "photos": {
     "title": "Nos photos"
+  },
+  "menu": {
+    "title": "Menu"
   },
   "rsvp": {
     "title": "RSVP",

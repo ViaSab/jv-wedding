@@ -11,7 +11,10 @@ const { activeMenuItem, menuItems } = useNavBar();
         :key="index"
         :index="`${index}`"
       >
-        <NuxtLink :to="localePath(`${item}`)">
+        <NuxtLink
+          :to="localePath(`${item}`)"
+          :class="item === 'rsvp' ? 'rsvp-item' : null"
+        >
           {{ $t(`navbar.${item}`) }}
         </NuxtLink>
       </ElMenuItem>

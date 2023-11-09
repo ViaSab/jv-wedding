@@ -13,6 +13,11 @@ defineI18nRoute({
 </template>
 
 <style lang="scss">
+body {
+  //background: url(../assets/img/background-flowers.png) no-repeat center;
+  background-color: $primary-lightest-color;
+}
+
 .schedule {
   img {
     max-width: 180px;

@@ -156,6 +156,7 @@ const submitRsvpForm = async (): Promise<void> => {
     modal-class="menu"
     :append-to-body="true"
     :lock-scroll="true"
+    :size="isMobile ? '90%' : '40%'"
   >
     <ContentDoc :path="localePath('/diner-menu')" />
   </ElDrawer>

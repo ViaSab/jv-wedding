@@ -21,8 +21,10 @@ const submitRsvpForm = async (): Promise<void> => {
 
 <template>
   <ElRow justify="center">
-    <ElCol :xs="24" :md="18" :xl="12">
-      <ContentDoc />
+    <ElCol :xs="24">
+      <div class="center">
+        <ContentDoc />
+      </div>
     </ElCol>
   </ElRow>
   <hr class="variant" />

@@ -201,7 +201,7 @@ const submitRsvpForm = async (): Promise<void> => {
 .form-container {
   padding: 24px;
   background-color: white;
-  border: 1px solid $lightest-color;
+  border: 1px dotted $primary-light-color;
 }
 
 // .container {

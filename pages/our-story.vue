@@ -10,6 +10,10 @@ defineI18nRoute({
 <template>
   <ElRow justify="center">
     <ElCol :xs="24" :md="18" :xl="12">
+      <h1>
+        <NuxtImg src="/img/svg/2-hearts.svg" width="80" />
+        {{ $t("our-story.title") }}
+      </h1>
       <ContentDoc />
     </ElCol>
   </ElRow>

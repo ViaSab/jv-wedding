@@ -19,6 +19,8 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     // Dev Tools
     "@nuxt/devtools",
+    // Nuxt Images
+    "@nuxt/image",
   ],
   i18n: {
     locales: ["en", "fr"],

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const { locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 const otherLocale = computed(() => (locale.value === "en" ? "fr" : "en"));

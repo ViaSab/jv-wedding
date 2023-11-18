@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 defineProps({
   category: String,
   photo: String,

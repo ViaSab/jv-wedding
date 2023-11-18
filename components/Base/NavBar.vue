@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const localePath = useLocalePath();
 const { activeMenuItem, menuItems } = useNavBar();
 </script>

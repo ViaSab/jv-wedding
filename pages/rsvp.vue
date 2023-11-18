@@ -25,7 +25,9 @@ const submitRsvpForm = async (): Promise<void> => {
       <ElRow justify="center">
         <ElCol :xs="24">
           <div class="center">
-            <h1>RSVP <NuxtImg src="/img/svg/letter.svg" width="70" /></h1>
+            <h1>
+              RSVP <NuxtImg src="/img/svg/letter.svg" alt="Letter" width="70" />
+            </h1>
             <ContentDoc />
           </div>
         </ElCol>

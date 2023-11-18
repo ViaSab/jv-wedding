@@ -1,16 +1,26 @@
 <template>
-  <ElRow justify="center" align="middle" :gutter="30">
-    <ElCol :xs="24">
-      <h1 class="center">Venue</h1>
-      <hr />
-    </ElCol>
-    <ElCol :xs="24" :md="12" :xl="12">
-      <AppPicture path="venue/ferme-marie-helene" alt="Ferme Marie-Hélène" />
-    </ElCol>
-    <ElCol :xs="24" :md="12" :xl="12">
-      <div>
-        <ContentDoc />
-      </div>
+  <ElRow justify="center">
+    <ElCol>
+      <ContentDoc />
     </ElCol>
   </ElRow>
 </template>
+
+<style lang="scss">
+.venue {
+  &-title {
+    position: relative;
+    padding: 20px;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &-photo img {
+    border: 1px solid white;
+  }
+}
+</style>

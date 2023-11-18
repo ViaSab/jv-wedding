@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const photos = OUR_STORY_PHOTOS;
 defineI18nRoute({
   paths: {
@@ -10,10 +10,14 @@ defineI18nRoute({
 <template>
   <ElRow justify="center">
     <ElCol :xs="24" :md="18" :xl="12">
-      <h1>
-        <NuxtImg src="/img/svg/2-hearts.svg" width="80" />
-        {{ $t("our-story.title") }}
-      </h1>
+      <div class="center picture">
+        <NuxtImg
+          src="/img/svg/2-hearts.svg"
+          alt="Herats and arrow drawing"
+          width="220"
+        />
+      </div>
+      <h1>{{ $t("our-story.title") }}</h1>
       <ContentDoc />
     </ElCol>
   </ElRow>
@@ -30,3 +34,9 @@ defineI18nRoute({
     </ElCol>
   </ElRow>
 </template>
+
+<style lang="scss" scoped>
+.picture {
+  margin-top: 15px;
+}
+</style>

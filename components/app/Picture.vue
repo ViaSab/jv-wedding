@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 defineProps({
   path: String,
   alt: String,

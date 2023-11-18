@@ -1,16 +1,17 @@
-<script setup>
+<script setup lang="ts">
 defineProps({
   path: String,
   alt: String,
+  isRight: Boolean,
 });
 </script>
 
 <template>
   <div class="cover">
-    <AppPicture :path="path" :alt="alt" />
-    <div class="cover__content">
+    <div :class="['cover__content', { right: isRight }]">
       <ContentSlot :use="$slots.default" />
     </div>
+    <AppPicture :path="path" :alt="alt" />
   </div>
 </template>
 

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const stdvideo = ref(null);
 
 const displayFullscreen = () => {

@@ -1,9 +1,9 @@
 .cover {
   background-color: $primary-color;
   height: auto;
-  position: relative;
   overflow: hidden;
   margin: -20px -20px $space-60 -20px;
+  position: relative;
 
   &__content {
     text-align: center;
@@ -40,6 +40,12 @@
       @media only screen and (min-width: 768px) {
         text-shadow: 2px 2px 2px $darkest-color;
       }
+    }
+  }
+
+  &__content.right {
+    @media only screen and (min-width: 768px) {
+      left: 0;
     }
   }
 }

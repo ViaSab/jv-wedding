@@ -1,5 +1,12 @@
 // Main menu of the website
-export const MENU = ["index", "our-story", "schedule", "diner-menu", "rsvp"];
+export const MENU = [
+  "index",
+  "our-story",
+  "schedule",
+  "diner-menu",
+  "venue",
+  "rsvp",
+];
 
 // List of photos for the Our Story page
 export const OUR_STORY_PHOTOS = [

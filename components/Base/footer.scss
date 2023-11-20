@@ -6,4 +6,16 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 15px;
+
+  .vertical-divider {
+    display: inline-block;
+    padding: 0 15px;
+  }
+
+  a {
+    color: white;
+    &:hover {
+      color: $primary-light-color;
+    }
+  }
 }

@@ -2,9 +2,10 @@
 export const MENU = [
   "index",
   "our-story",
+  "travel",
+  "venue",
   "schedule",
   "diner-menu",
-  "venue",
   "rsvp",
 ];
 

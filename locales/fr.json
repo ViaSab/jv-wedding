@@ -17,7 +17,8 @@
     "schedule": "Agenda",
     "diner-menu": "Menu",
     "venue": "lieu",
-    "rsvp": "RSVP"
+    "rsvp": "RSVP",
+    "travel": "Voyage"
   },
   "footer": {
     "text": "Par Jillian et Vianney"

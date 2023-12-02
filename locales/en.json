@@ -17,7 +17,8 @@
     "schedule": "Schedule",
     "diner-menu": "Menu",
     "venue": "venue",
-    "rsvp": "RSVP"
+    "rsvp": "RSVP",
+    "travel": "Travel"
   },
   "menu": {
     "title": "Menu"

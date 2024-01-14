@@ -18,6 +18,7 @@
     "diner-menu": "Menu",
     "venue": "venue",
     "rsvp": "RSVP",
+    "registry": "Registry",
     "travel": "Travel"
   },
   "menu": {
@@ -70,17 +71,17 @@
     },
     "quebec": {
       "title": "We're moving to Quebec",
-      "description": "Following a professional opportunity for Vianney, we moved to the neighboring province, Quebec. We went to live in the town of Saint-Sauveur north of Montreal.",
+      "description": "Following a professional opportunity for Vianney, we moved to the neighbouring province, Quebec. We went to live in the town of Saint-Sauveur north of Montreal.",
       "date": "2021"
     },
     "home": {
       "title": "We bought a house",
-      "description": "At the same time that we were preparing the move, we were looking for a house to buy. A little on a stroke of madness, we made a proposal after a virtual visit. We got it and we are very happy to have taken this risk.",
+      "description": "At the same time that we were preparing the move, we were looking for a house to buy. A little on a stroke of madness, we made an offer after a virtual visit. We got it and we are very happy to have taken this risk.",
       "date": "2021"
     },
     "bike-trip": {
       "title": "Bike tour in the Laurentides",
-      "description": "During the summer of 2022, we did a 3 day bike ride on the \" Petit Train du nord\". It is a bike trail that starts from Mont-Laurier and goes down to Montreal. A great way to discover the region.",
+      "description": "During the summer of 2022, we did a 3 day bike ride on the \"Petit Train du nord\". It is a bike trail that starts from Mont-Laurier and goes down to Montreal. A great way to discover the region.",
       "date": "2022"
     },
     "engagement": {

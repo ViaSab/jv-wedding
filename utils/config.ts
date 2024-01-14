@@ -6,6 +6,7 @@ export const MENU = [
   "venue",
   "schedule",
   "diner-menu",
+  "registry",
   "rsvp",
 ];
 

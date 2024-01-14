@@ -1,4 +1,4 @@
-import { FormRules } from "element-plus";
+import { type FormRules } from "element-plus";
 
 interface RsvpForm {
   name: string;

@@ -38,7 +38,7 @@ export default defineNuxtConfig({
       anchorLinks: false,
     },
   },
-  css: ["@/assets/style/main.scss"],
+  css: ["@/assets/style/main.scss", "element-plus/theme-chalk/display.css"],
   vite: {
     css: {
       preprocessorOptions: {

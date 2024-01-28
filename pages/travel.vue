@@ -8,13 +8,9 @@ defineI18nRoute({
 
 <template>
   <ElRow justify="center">
-    <ElCol>
-      <BlockCover path="travel/strasbourg" alt="Strasbourg" is-right />
-    </ElCol>
+    <BlockCover path="travel/strasbourg" alt="Strasbourg" is-right />
     <ElCol :xs="24" :md="18" :xl="12">
-      <div>
-        <ContentDoc />
-      </div>
+      <ContentDoc />
     </ElCol>
   </ElRow>
 </template>

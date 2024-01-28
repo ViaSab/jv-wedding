@@ -7,6 +7,7 @@ defineI18nRoute({
 </script>
 
 <template>
+  <BlockCover path="schedule/schedule" alt="Schedule" is-right />
   <div class="center schedule">
     <ContentDoc />
   </div>

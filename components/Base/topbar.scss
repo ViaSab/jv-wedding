@@ -1,8 +1,12 @@
 .top-bar {
-  background-color: $tertiary-color;
+  background-color: $primary-light-color;
   padding: 8px 10px;
   font-style: italic;
   font-size: 15px;
+  color: white;
+  a {
+    color: white;
+  }
   @media only screen and (max-width: 767px) {
     font-size: 14px;
   }

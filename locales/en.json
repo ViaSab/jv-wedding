@@ -3,7 +3,10 @@
     "other-language": "FR",
     "yes": "Yes",
     "no": "No",
-    "see-menu": "See dinner menu"
+    "see-menu": "See dinner menu",
+    "and": "and",
+    "shuttle": "Shuttle",
+    "updates": "updates"
   },
   "header": {
     "top-bar": "Work in progress. More details coming...",

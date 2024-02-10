@@ -3,7 +3,10 @@
     "other-language": "EN",
     "yes": "Oui",
     "no": "Non",
-    "see-menu": "Voir le menu du diner"
+    "see-menu": "Voir le menu du diner",
+    "and": "et",
+    "shuttle": "Navette",
+    "updates": "mises à jour"
   },
   "header": {
     "top-bar": "Site en constrution. Plus de contenu à venir...",

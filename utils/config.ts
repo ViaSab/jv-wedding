@@ -5,7 +5,7 @@ export const MENU = [
   "travel",
   "venue",
   "schedule",
-  "diner-menu",
+  "dinner-menu",
   "registry",
   "rsvp",
 ];

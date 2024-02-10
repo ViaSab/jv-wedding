@@ -187,7 +187,7 @@ const submitRsvpForm = async (): Promise<void> => {
     :lock-scroll="true"
     :size="isMobile ? '90%' : '40%'"
   >
-    <ContentDoc :path="localePath('/diner-menu')" />
+    <ContentDoc :path="localePath('/dinner-menu')" />
   </ElDrawer>
 </template>
 

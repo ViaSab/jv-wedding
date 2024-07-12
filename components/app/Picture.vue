@@ -2,7 +2,7 @@
 defineProps({
   path: String,
   alt: String,
-});
+})
 </script>
 
 <template>

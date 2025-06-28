@@ -8,6 +8,7 @@ export default defineNuxtConfig({
       title: "Jillian and Vianney's wedding site",
     },
   },
+
   modules: [
     // Handle content files
     "@nuxt/content",
@@ -22,6 +23,7 @@ export default defineNuxtConfig({
     // Nuxt Images
     "@nuxt/image",
   ],
+
   i18n: {
     locales: ["en", "fr"],
     defaultLocale: "en",
@@ -33,12 +35,15 @@ export default defineNuxtConfig({
     //   redirectOn: 'root',  // recommended
     // }
   },
+
   content: {
     markdown: {
       anchorLinks: false,
     },
   },
+
   css: ["@/assets/style/main.scss", "element-plus/theme-chalk/display.css"],
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -48,4 +53,6 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  compatibilityDate: "2025-06-28",
 });
